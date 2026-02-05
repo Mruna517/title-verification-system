@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TITLE VERIFICATION WEBSITE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #2a2a2a; /* dark grey */
+      color: #ffffff; /* white text */
+    }
+    .hero,
+    .section,
+    .footer {
+      background-color: #2a2a2a;
+      color: white;
+    }
+    .card {
+      background-color: #3a3a3a;
+      color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+    }
+    .card .icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #00d1b2; /* Bulma primary green */
+    }
+    strong {
+      color: #00d1b2; /* Bulma primary color (light green) or white */
+    }
+    .navbar {
+      height: 80px; /* Set a fixed height for the navbar */
+    }
+    .navbar-item {
+      font-size: 1.2rem; /* Increase the font size */
+    }
+
+    /* Adjust the hero section */
+    .hero-body {
+      padding: 3rem 1.5rem; /* Reduced padding to make it smaller */
+    }
+
+    .hero h1 {
+      font-size: 2.5rem; /* Smaller title font size */
+    }
+
+    .hero h2 {
+      font-size: 1.5rem; /* Smaller subtitle font size */
+    }
+
+    .hero a {
+      font-size: 1.2rem; /* Smaller button font size */
+      padding: 0.8rem 2rem; /* Adjust button padding */
+    }
+
+    /* Reduce space between Hero Section and Stats Section */
+    .columns.is-centered {
+      margin-top: 1rem; /* Reduce the margin between hero section and stats */
+    }
+
+    /* Optional: Smooth Scroll for the whole page */
+    html {
+      scroll-behavior: smooth;
+    }
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+
+    /* FadeInUp Effect */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ZoomIn Effect */
+    @keyframes zoomIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Applying the animation effects */
+    .animated.fadeInUp {
+      animation-name: fadeInUp;
+    }
+
+    .animated.zoomIn {
+      animation-name: zoomIn;
+    }
+
+    /* Slide-In-Up Effect */
+    @keyframes slideInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Applying the slideInUp animation to each section */
+    .animated.slideInUp {
+      animation-name: slideInUp;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-white" href="#">
+        <strong>VERIFY</strong>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item has-text-white" href="#home">Home</a>
+        <a class="navbar-item has-text-white" href="#information">About</a>
+        <a class="navbar-item has-text-white" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+ <!-- Hero Section -->
+ <section class="hero is-medium is-fullheight-with-navbar" id="home">
+    <div class="hero-body" id="hero">
+      <div class="container has-text-centered">
+        <h1 class="title has-text-white animated fadeInUp">Welcome to My Title Verification Site</h1>
+        <h2 class="subtitle has-text-light">
+          Smart Title Validation Against 160,000+ Registered Titles
+        </h2>
+        <a class="button is-light is-large" href="index.html">
+            Get Started
+          </a>          
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <div class="columns is-centered mt-6" id="stats">
+    <div class="column is-one-third has-text-centered">
+        <p class="title has-text-white is-2">160K+</p>
+        <p class="subtitle has-text-grey-light">Registered Titles Checked</p>
+    </div>
+    <div class="column is-one-third has-text-centered">
+        <p class="title has-text-white is-2">98%</p>
+        <p class="subtitle has-text-grey-light">Matching Accuracy</p>
+    </div>
+    <div class="column is-one-third has-text-centered">
+        <p class="title has-text-white is-2">0.2s</p>
+        <p class="subtitle has-text-grey-light">Avg Response Time</p>
+    </div>
+  </div>
+
+  <!-- Informational Section -->
+  <div class="container mt-5" id="information">
+    <div class="content has-text-centered">
+        <h2 class="title has-text-white is-4">Why Use Our Verification System?</h2>
+        <p class="has-text-grey-light is-size-5">
+            Our platform intelligently cross-verifies your submitted title against a database of over <strong>160,000+ registered publications</strong> maintained by the Press Registrar General of India (PRGI).
+        </p>
+        <p class="has-text-grey-light is-size-5 mt-3">
+            By analyzing phonetic patterns, spelling variations, disallowed words, and periodicity, we ensure your title is <strong>unique, compliant, and distinct</strong> from any existing publication.
+        </p>
+        <p class="has-text-grey-light is-size-5 mt-3">
+            Avoid delays, rejections, and legal conflicts. Get real-time feedback and a smart verification probability score — all in under a second.
+        </p>
+    </div>
+  </div>
+
+  <!-- Feature Cards Section -->
+  <section class="section" id="features">
+    <div class="container">
+      <h1 class="title has-text-centered has-text-white">Key Features</h1>
+      <div class="columns is-multiline is-centered">
+        <!-- Feature 1 -->
+        <div class="column is-one-third">
+          <div class="card has-text-centered">
+            <div class="card-content">
+              <span class="icon"><i class="fas fa-wave-square"></i></span>
+              <p class="title is-4 has-text-white">Smart Similarity Check</p>
+              <p>Detects phonetic and semantic similarities to existing titles using intelligent algorithms.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Feature 2 -->
+        <div class="column is-one-third">
+          <div class="card has-text-centered">
+            <div class="card-content">
+              <span class="icon"><i class="fas fa-shield-alt"></i></span>
+              <p class="title is-4 has-text-white">Guideline Compliance</p>
+              <p>Automatically applies PRGI rules and filters disallowed words or misleading combinations.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Feature 3 -->
+        <div class="column is-one-third">
+          <div class="card has-text-centered">
+            <div class="card-content">
+              <span class="icon"><i class="fas fa-percentage"></i></span>
+              <p class="title is-4 has-text-white">Verification Probability</p>
+              <p>Shows a probability score based on rule adherence and title uniqueness.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Feature 4 -->
+        <div class="column is-one-third">
+          <div class="card has-text-centered">
+            <div class="card-content">
+              <span class="icon"><i class="fas fa-rocket"></i></span>
+              <p class="title is-4 has-text-white">Fast & Scalable</p>
+              <p>Optimized to search 160,000+ titles instantly using advanced indexing and caching.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Feature 5 -->
+        <div class="column is-one-third">
+          <div class="card has-text-centered">
+            <div class="card-content">
+              <span class="icon"><i class="fas fa-language"></i></span>
+              <p class="title is-4 has-text-white">Multilingual Support</p>
+              <p>Understands titles in multiple languages to detect cross-lingual meaning duplications.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Feature 6 -->
+        <div class="column is-one-third">
+          <div class="card has-text-centered">
+            <div class="card-content">
+              <span class="icon"><i class="fas fa-comments"></i></span>
+              <p class="title is-4 has-text-white">Interactive Feedback</p>
+              <p>Gives clear reasons for rejection and suggestions to help users refine titles easily.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h1 class="title has-text-centered has-text-white">Contact Us</h1>
+      <div class="content has-text-centered">
+        <p class="has-text-white">For inquiries, please email us at <strong>contact@verify.com</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p class="has-text-white">© 2025 Title Verification System. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Intersection Observer
+    const observerOptions = {
+      threshold: 0.5, // Trigger animation when at least 50% of the section is in view
+    };
+
+    const sections = document.querySelectorAll('.section, .hero, .columns');
+    const animateIn = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated', 'fadeInUp'); // Add animation class when in view
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(animateIn, observerOptions);
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
